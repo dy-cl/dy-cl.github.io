@@ -8,11 +8,14 @@
 
     <meta
         name="description"
-        content="Photography by Dylan Counsell."
+        content="Dylan Counsell — theoretical chemistry, scientific computing and photography."
     >
 
     <meta property="og:title" content="Dylan Counsell">
-    <meta property="og:description" content="Photography">
+    <meta
+        property="og:description"
+        content="Theoretical chemistry, scientific computing and photography."
+    >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dylancounsell.com/">
     <meta
@@ -27,297 +30,130 @@
         content="Photograph at Perranporth by Dylan Counsell"
     >
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Dylan Counsell</h1>
+        <h1>
+            <a href="/">Dylan Counsell</a>
+        </h1>
 
         <nav>
-            <a href="/" class="active">Photography</a>
+            <a href="/" class="active">Home</a>
+            <a href="/photography/">Photography</a>
             <a href="/research/">Research</a>
             <a href="https://github.com/dy-cl">GitHub</a>
         </nav>
     </header>
 
-    <main>
-        <section class="gallery">
-            <a
-                href="photos/perranporth-2.jpg"
-                data-caption="Perranporth, 2026"
-            >
-                <img
-                    src="photos/perranporth-2.jpg"
-                    alt="Perranporth"
-                    loading="lazy"
-                >
-                <span class="caption">Perranporth, 2026</span>
-            </a>
+    <main class="home-main">
+        <section class="home-hero">
+            <div class="home-copy">
+                <p class="home-bio">
+                    PhD student in theoretical chemistry at the University of
+                    Cambridge.
+                </p>
 
-            <a
-                href="photos/perranporth.jpg"
-                data-caption="Perranporth, 2026"
-            >
-                <img
-                    src="photos/perranporth.jpg"
-                    alt="Perranporth"
-                    loading="lazy"
-                >
-                <span class="caption">Perranporth, 2026</span>
-            </a>
+                <div class="home-links">
+                    <a href="/research/">Research →</a>
+                    <a href="/photography/">Photography →</a>
+                    <a href="https://github.com/dy-cl">GitHub ↗</a>
+                </div>
+            </div>
 
-            <a
-                href="photos/peak-district.jpg"
-                data-caption="River Derwent Valley Trail, 2026"
-            >
-                <img
-                    src="photos/peak-district.jpg"
-                    alt="River Derwent Valley Trail"
-                    loading="lazy"
-                >
-                <span class="caption">River Derwent Valley Trail, 2026</span>
-            </a>
+            <figure class="home-image">
+                <a href="/photography/">
+                    <img
+                        id="home-hero-image"
+                        src="/photos/preview/perranporth-2.jpg"
+                        alt="Perranporth"
+                    >
+                </a>
 
-            <a
-                href="photos/shepreth-2.jpg"
-                data-caption="Shepreth Wildlife Park, 2026"
-            >
-                <img
-                    src="photos/shepreth-2.jpg"
-                    alt="Shepreth Wildlife Park"
-                    loading="lazy"
-                >
-                <span class="caption">Shepreth Wildlife Park, 2026</span>
-            </a>
+                <figcaption id="home-hero-caption">
+                    Perranporth, 2026
+                </figcaption>
+            </figure>
+        </section>
 
-            <a
-                href="photos/shepreth.jpg"
-                data-caption="Shepreth Wildlife Park, 2026"
-            >
-                <img
-                    src="photos/shepreth.jpg"
-                    alt="Shepreth Wildlife Park"
-                    loading="lazy"
-                >
-                <span class="caption">Shepreth Wildlife Park, 2026</span>
-            </a>
+        <section class="home-section">
+            <div class="home-section-heading">
+                <h3>Selected work</h3>
+                <a href="/research/">Research →</a>
+            </div>
 
-            <a
-                href="photos/apple-picking.jpg"
-                data-caption="Cambridgeshire, 2025"
-            >
-                <img
-                    src="photos/apple-picking.jpg"
-                    alt="Cambridgeshire"
-                    loading="lazy"
-                >
-                <span class="caption">Cambridgeshire, 2025</span>
-            </a>
+            <div class="home-work-grid">
+                <article class="home-work-item">
+                    <p class="home-work-label">Research</p>
 
-            <a
-                href="photos/jesus.jpg"
-                data-caption="Jesus College, Cambridge, 2024"
-            >
-                <img
-                    src="photos/jesus.jpg"
-                    alt="Jesus College, Cambridge"
-                    loading="lazy"
-                >
-                <span class="caption">Jesus College, Cambridge, 2024</span>
-            </a>
+                    <h4>NOCI-QMC</h4>
 
-            <a
-                href="photos/gairlochy.jpg"
-                data-caption="Gairlochy, 2024"
-            >
-                <img
-                    src="photos/gairlochy.jpg"
-                    alt="Gairlochy"
-                    loading="lazy"
-                >
-                <span class="caption">Gairlochy, 2024</span>
-            </a>
+                    <p>
+                        Stochastic approaches to correlation in
+                        nonorthogonal determinant spaces.
+                    </p>
+                </article>
 
-            <a
-                href="photos/amsterdam.jpg"
-                data-caption="Amsterdam, 2024"
-            >
-                <img
-                    src="photos/amsterdam.jpg"
-                    alt="Amsterdam"
-                    loading="lazy"
-                >
-                <span class="caption">Amsterdam, 2024</span>
-            </a>
+                <article class="home-work-item">
+                    <p class="home-work-label">Research</p>
 
-            <a
-                href="photos/prague.jpg"
-                data-caption="Prague, 2024"
-            >
-                <img
-                    src="photos/prague.jpg"
-                    alt="Prague"
-                    loading="lazy"
-                >
-                <span class="caption">Prague, 2024</span>
-            </a>
+                    <h4>NOCI-PT2</h4>
 
-            <a
-                href="photos/prague-3.jpg"
-                data-caption="Prague, 2024"
-            >
-                <img
-                    src="photos/prague-3.jpg"
-                    alt="Prague"
-                    loading="lazy"
-                >
-                <span class="caption">Prague, 2024</span>
-            </a>
+                    <p>
+                        Second-order perturbation theory applied to
+                        nonorthogonal configuration interaction using the
+                        extended nonorthogonal Wick's theorem.
+                    </p>
+                </article>
 
-            <a
-                href="photos/prague-4.jpg"
-                data-caption="Prague, 2024"
-            >
-                <img
-                    src="photos/prague-4.jpg"
-                    alt="Prague"
-                    loading="lazy"
-                >
-                <span class="caption">Prague, 2024</span>
-            </a>
+                <article class="home-work-item">
+                    <p class="home-work-label">Software</p>
 
-            <a
-                href="photos/prague-5.jpg"
-                data-caption="Prague, 2024"
-            >
-                <img
-                    src="photos/prague-5.jpg"
-                    alt="Prague"
-                    loading="lazy"
-                >
-                <span class="caption">Prague, 2024</span>
-            </a>
+                    <h4>noci-rs</h4>
 
-            <a
-                href="photos/ingleborough-3.jpg"
-                data-caption="Ingleborough, 2024"
-            >
-                <img
-                    src="photos/ingleborough-3.jpg"
-                    alt="Ingleborough"
-                    loading="lazy"
-                >
-                <span class="caption">Ingleborough, 2024</span>
-            </a>
+                    <p>
+                        High-performance software for nonorthogonal
+                        electronic-structure calculations, written in Rust.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-            <a
-                href="photos/ingleborough-2.jpg"
-                data-caption="Ingleborough, 2024"
-            >
-                <img
-                    src="photos/ingleborough-2.jpg"
-                    alt="Ingleborough"
-                    loading="lazy"
-                >
-                <span class="caption">Ingleborough, 2024</span>
-            </a>
+        <section class="home-section home-photography">
+            <div class="home-section-heading">
+                <h3>Photography</h3>
+                <a href="/photography/">Photography →</a>
+            </div>
 
-            <a
-                href="photos/ingleborough.jpg"
-                data-caption="Ingleborough, 2024"
-            >
-                <img
-                    src="photos/ingleborough.jpg"
-                    alt="Ingleborough"
-                    loading="lazy"
-                >
-                <span class="caption">Ingleborough, 2024</span>
-            </a>
+            <div class="home-photo-grid">
+                <a href="/photography/">
+                    <img
+                        data-home-photo
+                        src="/photos/preview/jesus.jpg"
+                        alt="Jesus College, Cambridge"
+                        loading="lazy"
+                    >
+                </a>
 
-            <a
-                href="photos/the-deep.jpg"
-                data-caption="Hull, 2024"
-            >
-                <img
-                    src="photos/the-deep.jpg"
-                    alt="The Deep"
-                    loading="lazy"
-                >
-                <span class="caption">Hull, 2024</span>
-            </a>
+                <a href="/photography/">
+                    <img
+                        data-home-photo
+                        src="/photos/preview/gairlochy.jpg"
+                        alt="Gairlochy"
+                        loading="lazy"
+                    >
+                </a>
 
-            <a
-                href="photos/hyde-park.jpg"
-                data-caption="London, 2024"
-            >
-                <img
-                    src="photos/hyde-park.jpg"
-                    alt="Hyde Park"
-                    loading="lazy"
-                >
-                <span class="caption">London, 2024</span>
-            </a>
-
-            <a
-                href="photos/fuerteventura.jpg"
-                data-caption="Fuerteventura, 2022"
-            >
-                <img
-                    src="photos/fuerteventura.jpg"
-                    alt="Fuerteventura"
-                    loading="lazy"
-                >
-                <span class="caption">Fuerteventura, 2022</span>
-            </a>
-
-            <a
-                href="photos/fuerteventura-3.jpg"
-                data-caption="Fuerteventura, 2022"
-            >
-                <img
-                    src="photos/fuerteventura-3.jpg"
-                    alt="Fuerteventura"
-                    loading="lazy"
-                >
-                <span class="caption">Fuerteventura, 2022</span>
-            </a>
-
-            <a
-                href="photos/fuerteventura-2.jpg"
-                data-caption="Fuerteventura, 2022"
-            >
-                <img
-                    src="photos/fuerteventura-2.jpg"
-                    alt="Fuerteventura"
-                    loading="lazy"
-                >
-                <span class="caption">Fuerteventura, 2022</span>
-            </a>
-
-            <a
-                href="photos/paris-2.jpg"
-                data-caption="Paris, 2022"
-            >
-                <img
-                    src="photos/paris-2.jpg"
-                    alt="Paris"
-                    loading="lazy"
-                >
-                <span class="caption">Paris, 2022</span>
-            </a>
-
-            <a
-                href="photos/paris.jpg"
-                data-caption="Paris, 2022"
-            >
-                <img
-                    src="photos/paris.jpg"
-                    alt="Paris"
-                    loading="lazy"
-                >
-                <span class="caption">Paris, 2022</span>
-            </a>
+                <a href="/photography/">
+                    <img
+                        data-home-photo
+                        src="/photos/preview/prague-4.jpg"
+                        alt="Prague"
+                        loading="lazy"
+                    >
+                </a>
+            </div>
         </section>
     </main>
 
@@ -325,32 +161,6 @@
         <p>© Dylan Counsell</p>
     </footer>
 
-    <div
-        class="lightbox"
-        id="lightbox"
-        aria-hidden="true"
-        role="dialog"
-        aria-modal="true"
-    >
-        <button
-            class="lightbox-close"
-            id="lightbox-close"
-            type="button"
-            aria-label="Close photograph"
-        >
-            ×
-        </button>
-
-        <figure class="lightbox-content">
-            <img
-                id="lightbox-image"
-                src=""
-                alt=""
-            >
-            <figcaption id="lightbox-caption"></figcaption>
-        </figure>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
