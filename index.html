@@ -30,7 +30,7 @@
         content="Photograph at Perranporth by Dylan Counsell"
     >
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css?v=7">
 </head>
 
 <body>
@@ -77,49 +77,6 @@
             </figure>
         </section>
 
-        <section class="home-section">
-            <div class="home-section-heading">
-                <h3>Selected work</h3>
-                <a href="/research/">Research →</a>
-            </div>
-
-            <div class="home-work-grid">
-                <article class="home-work-item">
-                    <p class="home-work-label">Research</p>
-
-                    <h4>NOCI-QMC</h4>
-
-                    <p>
-                        Stochastic approaches to correlation in
-                        nonorthogonal determinant spaces.
-                    </p>
-                </article>
-
-                <article class="home-work-item">
-                    <p class="home-work-label">Research</p>
-
-                    <h4>NOCI-PT2</h4>
-
-                    <p>
-                        Second-order perturbation theory applied to
-                        nonorthogonal configuration interaction using the
-                        extended nonorthogonal Wick's theorem.
-                    </p>
-                </article>
-
-                <article class="home-work-item">
-                    <p class="home-work-label">Software</p>
-
-                    <h4>noci-rs</h4>
-
-                    <p>
-                        High-performance software for nonorthogonal
-                        electronic-structure calculations, written in Rust.
-                    </p>
-                </article>
-            </div>
-        </section>
-
         <section class="home-section home-photography">
             <div class="home-section-heading">
                 <h3>Photography</h3>
@@ -155,12 +112,103 @@
                 </a>
             </div>
         </section>
+
+        <section class="home-section">
+            <div class="home-section-heading">
+                <h3>Selected work</h3>
+                <a href="/research/">Research →</a>
+            </div>
+
+            <div class="home-work-grid">
+                <article class="home-work-item">
+                    <p class="home-work-label">Research</p>
+
+                    <h4>
+                        <a href="/research/#noci-qmc">
+                            NOCI-QMC
+                        </a>
+                    </h4>
+
+                    <p>
+                        Stochastic approaches to correlation in
+                        nonorthogonal determinant spaces.
+                    </p>
+
+                    <a
+                        class="home-work-figure"
+                        href="/research/#noci-qmc"
+                        aria-label="NOCI-QMC research"
+                    >
+                        <img
+                            src="/figures/nociqmc-compactness.png"
+                            alt="NOCISD compactness comparison"
+                            loading="lazy"
+                        >
+                    </a>
+                </article>
+
+                <article class="home-work-item">
+                    <p class="home-work-label">Research</p>
+
+                    <h4>
+                        <a href="/research/#noci-pt2">
+                            NOCI-PT2
+                        </a>
+                    </h4>
+
+                    <p>
+                        Second-order perturbation theory applied to
+                        nonorthogonal configuration interaction using the
+                        extended nonorthogonal Wick's theorem.
+                    </p>
+
+                    <a
+                        class="home-work-figure"
+                        href="/research/#noci-pt2"
+                        aria-label="NOCI-PT2 research"
+                    >
+                        <img
+                            src="/figures/nocipt2-f2-cc-pvdz-holomorphic.png"
+                            alt="F2 cc-pVDZ NOCI-PT2 holomorphic scan"
+                            loading="lazy"
+                        >
+                    </a>
+                </article>
+
+                <article class="home-work-item">
+                    <p class="home-work-label">Software</p>
+
+                    <h4>
+                        <a href="/research/#noci-rs">
+                            noci-rs
+                        </a>
+                    </h4>
+
+                    <p>
+                        High-performance software for nonorthogonal
+                        electronic-structure calculations, written in Rust.
+                    </p>
+
+                    <a
+                        class="home-work-figure home-work-figure--logo"
+                        href="/research/#noci-rs"
+                        aria-label="noci-rs software"
+                    >
+                        <img
+                            src="/figures/noci-rs-logo.png"
+                            alt="noci-rs logo"
+                            loading="lazy"
+                        >
+                    </a>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© Dylan Counsell</p>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="/script.js?v=7"></script>
 </body>
 </html>

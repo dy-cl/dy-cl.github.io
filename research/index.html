@@ -22,7 +22,7 @@
         content="https://dylancounsell.com/research/"
     >
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css?v=6">
 </head>
 
 <body>
@@ -52,11 +52,15 @@
         <section class="research-section">
             <h3>Research</h3>
 
-            <article class="research-item">
+            <article
+                class="research-item research-item-with-figure"
+                id="noci-qmc"
+            >
                 <div class="research-item-heading">
                     <h4>
                         Stochastic nonorthogonal electronic structure
                     </h4>
+
                     <span>PhD research</span>
                 </div>
 
@@ -65,20 +69,51 @@
                     determinant spaces, including NOCI-QMC and NOCCMC
                     (in development).
                 </p>
+
+                <figure class="research-figure">
+                    <a
+                        class="research-figure-link"
+                        href="/figures/nociqmc-compactness.png"
+                    >
+                        <img
+                            src="/figures/nociqmc-compactness.png"
+                            alt="NOCISD compactness comparison"
+                            loading="lazy"
+                        >
+                    </a>
+                </figure>
             </article>
 
-            <article class="research-item">
+            <article
+                class="research-item research-item-with-figure"
+                id="noci-pt2"
+            >
                 <div class="research-item-heading">
                     <h4>
                         Perturbative nonorthogonal configuration interaction
                     </h4>
+
                     <span>PhD research</span>
                 </div>
 
                 <p>
-                    Fast NOCI-PT2 for large systems with the extended
-                    nonorthogonal Wick's theorem.
+                    Second-order perturbation theory applied to
+                    nonorthogonal configuration interaction using the
+                    extended nonorthogonal Wick's theorem.
                 </p>
+
+                <figure class="research-figure">
+                    <a
+                        class="research-figure-link"
+                        href="/figures/nocipt2-f2-cc-pvdz-holomorphic.png"
+                    >
+                        <img
+                            src="/figures/nocipt2-f2-cc-pvdz-holomorphic.png"
+                            alt="F2 cc-pVDZ NOCI-PT2 holomorphic scan"
+                            loading="lazy"
+                        >
+                    </a>
+                </figure>
             </article>
 
             <article class="research-item">
@@ -87,6 +122,7 @@
                         Finite-size errors in stochastic determinant-based
                         methods
                     </h4>
+
                     <span>MPhil research</span>
                 </div>
 
@@ -101,7 +137,10 @@
         <section class="research-section">
             <h3>Software</h3>
 
-            <article class="research-item">
+            <article
+                class="research-item research-item-with-figure"
+                id="noci-rs"
+            >
                 <div class="research-item-heading">
                     <h4>noci-rs</h4>
 
@@ -118,6 +157,19 @@
                     electronic-structure calculations. Available methods
                     include NOCI, NOCI-PT2 and NOCI-QMC.
                 </p>
+
+                <figure class="research-figure research-figure--logo">
+                    <a
+                        class="research-figure-link"
+                        href="https://github.com/dy-cl/noci-rs"
+                    >
+                        <img
+                            src="/figures/noci-rs-logo.png"
+                            alt="noci-rs logo"
+                            loading="lazy"
+                        >
+                    </a>
+                </figure>
             </article>
         </section>
 
@@ -131,6 +183,7 @@
                 >
                     <span>
                         <strong>Research CV</strong>
+
                         <small>
                             Research projects, methods and academic background
                         </small>
@@ -145,6 +198,7 @@
                 >
                     <span>
                         <strong>Software CV</strong>
+
                         <small>
                             Scientific software, HPC and performance engineering
                         </small>
