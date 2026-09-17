@@ -65,19 +65,19 @@ const photos = [
         caption: "Prague, 2024",
     },
     {
-        file: "ingleborough-3.jpg",
-        alt: "Ingleborough",
-        caption: "Ingleborough, 2024",
+        file: "whernside-3.jpg",
+        alt: "Whernside",
+        caption: "Whernside, 2024",
     },
     {
-        file: "ingleborough-2.jpg",
-        alt: "Ingleborough",
-        caption: "Ingleborough, 2024",
+        file: "whernside-2.jpg",
+        alt: "Whernside",
+        caption: "Whernside, 2024",
     },
     {
-        file: "ingleborough.jpg",
-        alt: "Ingleborough",
-        caption: "Ingleborough, 2024",
+        file: "whernside.jpg",
+        alt: "Whernside",
+        caption: "Whernside, 2024",
     },
     {
         file: "the-deep.jpg",
@@ -113,6 +113,53 @@ const photos = [
         file: "paris.jpg",
         alt: "Paris",
         caption: "Paris, 2022",
+    },
+];
+
+const selectedWork = [
+    {
+        label: "Research",
+        title: "NOCI-QMC",
+        description:
+            "Stochastic approaches to correlation in nonorthogonal determinant spaces.",
+        href: "/research/#noci-qmc",
+        image: "/figures/NOCIQMC.svg",
+        alt: "NOCI-QMC schematic",
+        ariaLabel: "NOCI-QMC research",
+        logo: false,
+    },
+    {
+        label: "Research",
+        title: "NOCI-PT2",
+        description:
+            "Second-order perturbation theory applied to nonorthogonal configuration interaction.",
+        href: "/research/#noci-pt2",
+        image: "/figures/NOCIPT2.svg",
+        alt: "NOCI-PT2 schematic",
+        ariaLabel: "NOCI-PT2 research",
+        logo: false,
+    },
+    {
+        label: "Research",
+        title: "Finite-size correction",
+        description:
+            "Finite-size corrections for periodic stochastic electronic-structure calculations.",
+        href: "/research/#finite-size-correction",
+        image: "/figures/SGCorrection.svg",
+        alt: "Transition structure factor finite-size correction schematic",
+        ariaLabel: "Finite-size correction research",
+        logo: false,
+    },
+    {
+        label: "Software",
+        title: "noci-rs",
+        description:
+            "High-performance software for nonorthogonal electronic-structure calculations, written in Rust.",
+        href: "/research/#noci-rs",
+        image: "/figures/noci-rs-logo.png",
+        alt: "noci-rs logo",
+        ariaLabel: "noci-rs software",
+        logo: true,
     },
 ];
 
@@ -163,6 +210,63 @@ function randomizeHomepagePhotos() {
         setPreviewImage(
             selectedImages[index],
             selectedPhotos[index + 1],
+        );
+    }
+}
+
+function setHomepageWorkItem(element, work) {
+    const label = element.querySelector("[data-home-work-label]");
+    const title = element.querySelector("[data-home-work-title]");
+    const description = element.querySelector(
+        "[data-home-work-description]",
+    );
+    const figure = element.querySelector("[data-home-work-figure]");
+    const image = element.querySelector("[data-home-work-image]");
+
+    if (
+        label === null ||
+        title === null ||
+        description === null ||
+        figure === null ||
+        image === null
+    ) {
+        return;
+    }
+
+    label.textContent = work.label;
+
+    title.textContent = work.title;
+    title.href = work.href;
+
+    description.textContent = work.description;
+
+    figure.href = work.href;
+    figure.setAttribute("aria-label", work.ariaLabel);
+    figure.classList.toggle(
+        "home-work-figure--logo",
+        work.logo,
+    );
+
+    image.src = work.image;
+    image.alt = work.alt;
+}
+
+function randomizeHomepageWork() {
+    const workItems = document.querySelectorAll("[data-home-work]");
+
+    if (workItems.length === 0) {
+        return;
+    }
+
+    const selectedItems = shuffle(selectedWork).slice(
+        0,
+        workItems.length,
+    );
+
+    for (let index = 0; index < workItems.length; index += 1) {
+        setHomepageWorkItem(
+            workItems[index],
+            selectedItems[index],
         );
     }
 }
@@ -238,4 +342,5 @@ function setupLightbox() {
 }
 
 randomizeHomepagePhotos();
+randomizeHomepageWork();
 setupLightbox();
